@@ -1,0 +1,36 @@
+﻿<Properties StartupConfiguration="{7914171E-D47F-47D5-B9E8-C6B18D985BC9}|Default">
+  <MonoDevelop.Ide.ItemProperties.Football FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Football/Game.cs">
+    <Files>
+      <File FileName="Football/Program.cs" Line="9" Column="13" />
+      <File FileName="Football/Person.cs" Line="12" Column="19" />
+      <File FileName="Football/FootballPlayer.cs" Line="12" Column="34" />
+      <File FileName="Football/Goalkeeper.cs" Line="4" Column="45" />
+      <File FileName="Football/Defender.cs" Line="4" Column="43" />
+      <File FileName="Football/Midfield.cs" Line="4" Column="43" />
+      <File FileName="Football/Striker.cs" Line="4" Column="42" />
+      <File FileName="Football/Coach.cs" Line="4" Column="32" />
+      <File FileName="Football/Referee.cs" Line="4" Column="34" />
+      <File FileName="Football/Team.cs" Line="12" Column="10" />
+      <File FileName="Football/Game.cs" Line="112" Column="13" />
+      <File FileName="Football/Goal.cs" Line="22" Column="10" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Football" expanded="True">
+            <Node name="Football" expanded="True">
+              <Node name="Game.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
