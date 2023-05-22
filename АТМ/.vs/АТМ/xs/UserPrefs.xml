@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{837C2428-101B-458A-A277-6D98532FEF29}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="АТМ/ITransaction.cs">
+    <Files>
+      <File FileName="АТМ/Program.cs" Line="1" Column="1" />
+      <File FileName="АТМ/Atm.cs" Line="11" Column="85" />
+      <File FileName="АТМ/BankAccount.cs" Line="10" Column="45" />
+      <File FileName="АТМ/IBalance.cs" Line="6" Column="46" />
+      <File FileName="АТМ/IDeposit.cs" Line="6" Column="46" />
+      <File FileName="АТМ/ITransaction.cs" Line="6" Column="54" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="АТМ" expanded="True">
+            <Node name="АТМ" expanded="True">
+              <Node name="ITransaction.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.АТМ FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>

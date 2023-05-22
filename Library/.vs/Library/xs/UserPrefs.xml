@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{881948C4-749E-4704-B56F-3FF2D7BEB5E9}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Library FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Library/Library.cs">
+    <Files>
+      <File FileName="Library/Program.cs" Line="9" Column="13" />
+      <File FileName="Library/Book.cs" Line="1" Column="1" />
+      <File FileName="Library/Library.cs" Line="13" Column="38" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Library" expanded="True">
+            <Node name="Library" expanded="True">
+              <Node name="Library.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
