@@ -56,6 +56,17 @@ namespace Library
 			}
 		}
 
+		public void ShowAllAvailableBooks()
+		{
+			foreach(var x in books)
+			{
+				if(x.IsAvailable)
+				{
+                    Console.WriteLine($"{x.Title} - {x.Author} - {x.Genre} - {x.IsAvailable}");
+                }
+			}
+		}
+
 		public void SearchBooksByAuthor(string author)
 		{
 			List<Book> booksByAuthor = new List<Book>();

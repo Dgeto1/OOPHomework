@@ -37,8 +37,9 @@ namespace Library
                     Console.WriteLine("1.Get a book");
                     Console.WriteLine("2.Return a book");
                     Console.WriteLine("3.Show all books");
-                    Console.WriteLine("4.Search a book by author");
-                    Console.WriteLine("5.Seacrh a book by genre");
+                    Console.WriteLine("4.Show all available books");
+                    Console.WriteLine("5.Search a book by author");
+                    Console.WriteLine("6.Seacrh a book by genre");
 
                     int choosedNumber = int.Parse(Console.ReadLine());
 
@@ -58,11 +59,14 @@ namespace Library
                             library.ShowAllBooks();
                             break;
                         case 4:
+                            library.ShowAllAvailableBooks();
+                            break;
+                        case 5:
                             Console.WriteLine("Please, enter the author's name!");
                             string authorName = Console.ReadLine();
                             library.SearchBooksByAuthor(authorName);
                             break;
-                        case 5:
+                        case 6:
                             Console.WriteLine("Please, enter the genre!");
                             string genre = Console.ReadLine();
                             library.SearchBooksByGenre(genre);
