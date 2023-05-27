@@ -9,13 +9,42 @@ namespace Library
 		private string address;
 		private List<Book> books;
 
-		public string Name { get; set; }
-		public string Address { get; set; }
+		public string Name
+		{
+			get
+			{
+                if (String.IsNullOrEmpty(name))
+                {
+                    throw new ArgumentException("Name can't be null or empty!");
+                }
+				return name;
+            }
+			set
+			{
+                name = value;
+            }
+		}
+		public string Address
+		{
+			get
+			{
+                if (String.IsNullOrEmpty(address))
+                {
+                    throw new ArgumentException("Address can't be null or empty!");
+                }
+				return address;
+            }
+			set
+			{
+                address = value;
+            }
+		}
 
-		public Library(string name, string address)
+		public Library(string name, string address, List<Book> books)
 		{
 			this.Name = name;
 			this.Address = address;
+			this.books = books;
 			books = new List<Book>();
 		}
 
@@ -23,11 +52,11 @@ namespace Library
 		{
 			foreach(var x in books)
 			{
-				Console.WriteLine(x);
+				Console.WriteLine($"{x.Title} - {x.Author} - {x.Genre} - {x.IsAvailable}");
 			}
 		}
 
-		public List<Book> SearchBooksByAuthor(string author)
+		public void SearchBooksByAuthor(string author)
 		{
 			List<Book> booksByAuthor = new List<Book>();
 			for(int i=0; i<books.Count; i++)
@@ -37,11 +66,13 @@ namespace Library
 					booksByAuthor.Add(books[i]);
 				}
 			}
-
-			return booksByAuthor;
+			foreach(var x in booksByAuthor)
+			{
+				Console.WriteLine($"{x.Title} - {x.Author} - {x.Genre} - {x.IsAvailable}");
+			}
 		}
 
-		public List<Book> SearchBooksByGenre(string genre)
+		public void SearchBooksByGenre(string genre)
 		{
             List<Book> booksByGenre = new List<Book>();
             for (int i = 0; i < books.Count; i++)
@@ -51,57 +82,72 @@ namespace Library
                     booksByGenre.Add(books[i]);
                 }
             }
-
-            return booksByGenre;
+            foreach (var x in booksByGenre)
+            {
+                Console.WriteLine($"{x.Title} - {x.Author} - {x.Genre} - {x.IsAvailable}");
+            }
         }
 
 		public void AddBook(Book book)
 		{
-			if(books.Contains(book))
+			books.Add(book);
+			Console.WriteLine($"You added {book.Title} to the library!");
+		}
+
+		public void RemoveBook(string bookName)
+		{
+			bool isFounded = false;
+			foreach(var x in books)
 			{
-				Console.WriteLine("We already have this book!");
+				if(x.Title == bookName)
+				{
+                    books.Remove(x);
+					isFounded = true;
+                    Console.WriteLine($"You removed {x.Title} from the library!");
+					break;
+                }
 			}
-			else
+			if(!isFounded)
 			{
-                books.Add(book);
+				Console.WriteLine("Sorry, we don't have this book!");
+			}
+		}
+
+		public void TakeBook(string bookName)
+		{
+			bool isFound = false;
+			foreach (var x in books)
+			{
+				if (x.Title == bookName && x.IsAvailable)
+				{
+					x.IsAvailable = false;
+					isFound = true;
+					Console.WriteLine("Enjoy reading!");
+					break;
+				}
+			}
+			if(!isFound)
+			{
+                Console.WriteLine("Sorry, we don't have this book at the moment!");
             }
 		}
 
-		public void RemoveBook(Book book)
+		public void ReturnBook(String nameBook)
 		{
-			if (!books.Contains(book))
+			bool isFounded = false;
+			foreach(var x in books)
 			{
-				Console.WriteLine("We don't have this book!");
+				if(x.Title == nameBook && !x.IsAvailable)
+				{
+                    x.IsAvailable = true;
+					isFounded = true;
+                    Console.WriteLine("Thank you for returning the book!");
+					break;
+                }
 			}
-			else
+			if(!isFounded)
 			{
-				books.Remove(book);
-			}
-		}
-
-		public void TakeBook(Book book)
-		{
-			if(!books.Contains(book) || !book.IsAvailable)
-			{
-				Console.WriteLine("Sorry, we don't have this book at the moment!");
-			}
-			else
-			{
-				book.IsAvailable = false;
-				Console.WriteLine("Enjoy reading!");
-			}
-		}
-
-		public void ReturnBook(Book book)
-		{
-			if (!books.Contains(book))
-			{
-				Console.WriteLine("Sorry, this book isn't from our library!");
-			}
-			else
-			{
-				book.IsAvailable = true;
-				Console.WriteLine("Thank you for returning the book!");
+				Console.WriteLine("This book is not from our library!");
 			}
 		}
 	}
