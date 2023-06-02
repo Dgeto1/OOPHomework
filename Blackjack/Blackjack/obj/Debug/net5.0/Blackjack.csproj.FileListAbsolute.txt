@@ -1,0 +1,16 @@
+/Users/hristopapanov/Documents/GitHub/OOPHomework/Blackjack/Blackjack/bin/Debug/net5.0/Blackjack
+/Users/hristopapanov/Documents/GitHub/OOPHomework/Blackjack/Blackjack/bin/Debug/net5.0/Blackjack.deps.json
+/Users/hristopapanov/Documents/GitHub/OOPHomework/Blackjack/Blackjack/bin/Debug/net5.0/Blackjack.runtimeconfig.json
+/Users/hristopapanov/Documents/GitHub/OOPHomework/Blackjack/Blackjack/bin/Debug/net5.0/Blackjack.runtimeconfig.dev.json
+/Users/hristopapanov/Documents/GitHub/OOPHomework/Blackjack/Blackjack/bin/Debug/net5.0/Blackjack.dll
+/Users/hristopapanov/Documents/GitHub/OOPHomework/Blackjack/Blackjack/bin/Debug/net5.0/Blackjack.pdb
+/Users/hristopapanov/Documents/GitHub/OOPHomework/Blackjack/Blackjack/obj/Debug/net5.0/Blackjack.csproj.AssemblyReference.cache
+/Users/hristopapanov/Documents/GitHub/OOPHomework/Blackjack/Blackjack/obj/Debug/net5.0/Blackjack.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hristopapanov/Documents/GitHub/OOPHomework/Blackjack/Blackjack/obj/Debug/net5.0/Blackjack.AssemblyInfoInputs.cache
+/Users/hristopapanov/Documents/GitHub/OOPHomework/Blackjack/Blackjack/obj/Debug/net5.0/Blackjack.AssemblyInfo.cs
+/Users/hristopapanov/Documents/GitHub/OOPHomework/Blackjack/Blackjack/obj/Debug/net5.0/Blackjack.csproj.CoreCompileInputs.cache
+/Users/hristopapanov/Documents/GitHub/OOPHomework/Blackjack/Blackjack/obj/Debug/net5.0/Blackjack.dll
+/Users/hristopapanov/Documents/GitHub/OOPHomework/Blackjack/Blackjack/obj/Debug/net5.0/refint/Blackjack.dll
+/Users/hristopapanov/Documents/GitHub/OOPHomework/Blackjack/Blackjack/obj/Debug/net5.0/Blackjack.pdb
+/Users/hristopapanov/Documents/GitHub/OOPHomework/Blackjack/Blackjack/obj/Debug/net5.0/Blackjack.genruntimeconfig.cache
+/Users/hristopapanov/Documents/GitHub/OOPHomework/Blackjack/Blackjack/obj/Debug/net5.0/ref/Blackjack.dll
